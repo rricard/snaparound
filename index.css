@@ -39,13 +39,34 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+@media(max-width: 550px) {
+  #container {
+    flex-direction: column;
+  }
+}
+
 #iphone {
   width: 250px;
   height: 510px;
   flex-shrink: 0;
   margin: 10px;
 
-  background-image: url("Device.png");
+  background-image: url("./Device.png");
+}
+
+#screen {
+  position: relative;
+  top: 63px;
+  left: 17.5px;
+  width: 215.5px;
+  height: 383px;
+
+  background-color: black;
+}
+
+#screen video {
+  width: 215.5px;
+  height: 383px;
 }
 
 #content {
