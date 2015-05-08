@@ -32,20 +32,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+
   height: 100%;
   width: 100%;
 }
 
+#centered {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media(max-width: 550px) {
-  #container {
-    flex-direction: column;
+  #iphone {
+    display: block;
+  }
+  #content {
+    display: block;
   }
 }
 
 #iphone {
+  display: inline-block;
   width: 250px;
   height: 510px;
   flex-shrink: 0;
@@ -70,27 +82,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
 }
 
 h1#logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   font-weight: lighter;
   font-size: 42px;
   text-align: center;
+
+  height: 136px;
+}
+
+h1#logo span.start, h1#logo span.end span {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 h1#logo span.end {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  display: inline-block;
   width: 136px;
   height: 136px;
   border-radius: 68px;
