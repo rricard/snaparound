@@ -1,54 +1,57 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>snaparound</title>
-  <link rel="stylesheet" href="./index.css" type="text/css" media="screen" charset="utf-8">
-</head>
-<body>
-  <div id="container">
-    <div id="centered">
-      <div id="iphone">
-        <div id="screen">
-          <video autoplay>
-            <source src="/ScreenCast.mp4" />
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>snaparound</title>
+        <link rel="stylesheet" href="./index.css" type="text/css" media="screen" charset="utf-8">
+    </head>
+    <body>
+        <div id="container" class="centered helperCenterer">
+            <div class="centeredVertically">
 
-            <source src="/ScreenCast.webm" />
-          </video>
+
+                <div id="iphone">
+                    <div id="screen">
+                        <video autoplay>
+                            <source src="/ScreenCast.mp4" />
+                            <source src="/ScreenCast.webm" />
+                        </video>
+                    </div>
+                </div>
+
+                <div id="content">
+                    <h1 id="logo">
+                        <span class="start">snap</span>
+                        <span class="end">
+                        <span>around</span>
+                        </span>
+                    </h1>
+                    <div id="textDescription">
+                        <p>Snaparound is a simple app to see what's happening around you</p>
+                        <h2>We're launching soon!</h2>
+                        <p>We'll let you know when we're launching.</p>
+                        <p>We will not bother you before that!</p>
+                    </div>
+                    <form action="//snaparound.us10.list-manage.com/subscribe/post?u=ad4c82af420ca0022a43a6c62&amp;id=06c9ca4685" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <input type="email" value="" name="EMAIL" class="required email" placeholder="Your email" id="mce-EMAIL">
+                        <div style="position: absolute; left: -5000px;">
+                            <input type="text" name="b_ad4c82af420ca0022a43a6c62_06c9ca4685" tabindex="-1" value="">
+                        </div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" onClick="ga('send', 'event', { eventCategory: 'email', eventAction: 'signup', eventLabel: 'main'});">
+                    </form>
+                </div>
+
+
+            </div>
         </div>
-      </div>
-  
-      <div id="content">
-        <h1 id="logo">
-          <span class="start">snap</span>
-  
-          <span class="end"><span>around<span></span>
-        </h1>
-  
-        <p>snaparound is a simple app to see what's happening around you</p>
-  
-        <h2>We're launching soon!</h2>
-  
-        <p>We'll let you know when we're launching. We will not bother you before that!</p>
-  
-        <form action="//snaparound.us10.list-manage.com/subscribe/post?u=ad4c82af420ca0022a43a6c62&amp;id=06c9ca4685" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <input type="email" value="" name="EMAIL" class="required email" placeholder="Your email" id="mce-EMAIL">
-  
-          <div style="position: absolute; left: -5000px;"><input type="text" name="b_ad4c82af420ca0022a43a6c62_06c9ca4685" tabindex="-1" value=""></div>
-  
-          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" onClick="ga('send', 'event', { eventCategory: 'email', eventAction: 'signup', eventLabel: 'main'});">
-        </form>
-      </div>
-    </div>
-  </div>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-62787134-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-</body>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            
+            ga('create', 'UA-62787134-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
 </html>
