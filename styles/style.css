@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}
+body {	line-height: 1;}
+ol, ul {	list-style: none;}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}
+table {	border-collapse: collapse;	border-spacing: 0;}
+
+
+/*General */
+.centered{
+    margin-left:auto;
+    margin-right:auto;
+}
+.helperCenterer
+{
+	display: table;
+}
+.centeredVertically
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+.inline 
+{
+	display: inline-block;
+	vertical-align:middle;
+}
+
+html, body {
+	height: 100%;
+	width : 100%;
+}
+
+
+body {
+	background-color: #183026;
+}
+
+.bg-main {
+	min-height: 100%;
+
+	background:	linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/bg1-blur.jpg") no-repeat;
+	background-size : cover;
+	background-attachment:fixed;
+}
+
+
+
+/* Nav Bar */
+nav {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+li {
+    display: inline;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	padding: 20px;
+	margin: 5px;
+}
+
+a:hover {
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+/* Main */
+div {
+	color: white;
+}
+.logo {
+	background:url("../ressources/logo.png") no-repeat;
+	background-size : cover;
+
+	width: 100px;
+	height: 100px;
+}
+
+.bg-main {
+	position:relative;
+}
+.article-main {
+    position:absolute;
+    bottom:50px;
+    right:50px;
+}
+.title {
+	text-align:center;
+	padding-bottom: 10px;
+}
+.description {
+	padding-top: 10px;
+}
+
+
+/* Support */
+.header-support {
+    height: 30vw;
+    width: 100%;
+
+	background:	linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/bg1-blur.jpg") no-repeat;
+	background-size : cover;
+}
+h1 {
+	text-align: center;
+	font-size: 40px;
+	color:white;
+	height:300px;
+  	line-height:300px;
+}
+.contact {
+	padding: 80px 0 80px 0;
+	text-align: center;
+	font-size: 30px;
+}
+
+/* Form */
+form {
+	text-align: center;
+	padding-bottom: 100px;
+}
+input, textarea {
+	padding: 2%;
+	font-size : 12px;
+
+	width : 75%;
+	margin-top: 20px;
+	background-color: white;
+
+	border : none;
+}
+.name-email > input {
+	width: 35%;
+}
+.name {
+	margin-right: 0.7%;
+}
+textarea {
+	resize: none;
+	height: 150px;	
+}
+
+.send {
+	border: 0;
+	background: #35b88f;
+	color: #fff;
+	cursor: pointer;
+	outline: 0;
+	border-radius: 3em;
+	width: 20%;
+}
+
+/* Terms */
+.article-terms {
+	text-align: justify;
+	width: 80%;
+	padding-bottom: 100px;
+}
